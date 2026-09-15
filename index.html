@@ -8,6 +8,9 @@
   <meta name="description" content="Central de Marketing da Capriche Limpeza: conteúdo, materiais, Meta Ads, resultados e banco de ideias.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .mi-logo{width:150px!important;height:auto!important;max-height:36px;object-fit:contain;display:block!important;opacity:1!important}
+  </style>
 </head>
 <body>
   <header class="topbar">
@@ -16,7 +19,7 @@
       <div class="brand-sep"></div>
       <div class="brand-title">Central de Marketing</div>
       <div class="brand-sep agency-sep"></div>
-      <img src="mais-ideias-logo.svg" class="mi-logo" alt="Mais Ideias">
+      <img src="mais-ideias-logo.webp" class="mi-logo" alt="Mais Ideias">
     </div>
     <div class="top-actions">
       <a class="btn whatsapp-btn" id="whatsappHelpBtn" href="https://wa.me/5547988689351?text=Ol%C3%A1%20Jean%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20a%20Central%20de%20Marketing%20da%20Capriche." target="_blank" rel="noopener">Tirar dúvida</a>
@@ -37,39 +40,21 @@
       </div>
 
       <nav class="nav-list" id="mainNav">
-        <button class="nav-item active" data-view="dashboard">
-          <span class="nav-icon">01</span><span>Visão Geral</span>
-        </button>
-        <button class="nav-item" data-view="conteudo">
-          <span class="nav-icon">02</span><span>Conteúdo</span>
-        </button>
-        <button class="nav-item" data-view="materiais">
-          <span class="nav-icon">03</span><span>Materiais</span>
-        </button>
-        <button class="nav-item" data-view="campanhas">
-          <span class="nav-icon">04</span><span>Campanhas</span>
-        </button>
-        <button class="nav-item" data-view="resultados">
-          <span class="nav-icon">05</span><span>Resultados</span>
-        </button>
-        <button class="nav-item" data-view="ideias">
-          <span class="nav-icon">06</span><span>Banco de Ideias</span>
-        </button>
+        <button class="nav-item active" data-view="dashboard"><span class="nav-icon">01</span><span>Visão Geral</span></button>
+        <button class="nav-item" data-view="conteudo"><span class="nav-icon">02</span><span>Conteúdo</span></button>
+        <button class="nav-item" data-view="materiais"><span class="nav-icon">03</span><span>Materiais</span></button>
+        <button class="nav-item" data-view="campanhas"><span class="nav-icon">04</span><span>Campanhas</span></button>
+        <button class="nav-item" data-view="resultados"><span class="nav-icon">05</span><span>Resultados</span></button>
+        <button class="nav-item" data-view="ideias"><span class="nav-icon">06</span><span>Banco de Ideias</span></button>
       </nav>
 
       <div class="side-progress">
-        <div class="side-progress-head">
-          <span>Progresso do ciclo</span>
-          <strong id="cycleProgressLabel">0%</strong>
-        </div>
+        <div class="side-progress-head"><span>Progresso do ciclo</span><strong id="cycleProgressLabel">0%</strong></div>
         <div class="progress-track"><div class="progress-fill" id="cycleProgress"></div></div>
         <small>Baseado nos conteúdos publicados e materiais recebidos.</small>
       </div>
 
-      <div class="agency-sign">
-        <span>Estratégia e gestão</span>
-        <strong>mais ideias<span>.</span></strong>
-      </div>
+      <div class="agency-sign"><span>Estratégia e gestão</span><strong>mais ideias<span>.</span></strong></div>
     </aside>
 
     <main class="main">
@@ -80,129 +65,54 @@
             <h1>Olá, Luciana.<br><span>Seu marketing está organizado aqui.</span></h1>
             <p>Veja o que precisa ser feito, acompanhe o conteúdo e entenda como as campanhas estão evoluindo — sem misturar postagem com tráfego pago.</p>
           </div>
-          <div class="hero-badge">
-            <span>Prioridade do mês</span>
-            <strong>Meta Ads</strong>
-            <small id="heroMediaBudget">R$ 950 em mídia</small>
-          </div>
+          <div class="hero-badge"><span>Prioridade do mês</span><strong>Meta Ads</strong><small id="heroMediaBudget">R$ 950 em mídia</small></div>
         </div>
 
         <div class="stat-grid">
-          <article class="stat-card">
-            <span>Conteúdos publicados</span>
-            <strong id="dashPublished">0/20</strong>
-            <div class="mini-track"><div class="mini-fill" id="dashContentProgress"></div></div>
-          </article>
-          <article class="stat-card">
-            <span>Materiais recebidos</span>
-            <strong id="dashMaterials">0/12</strong>
-            <div class="mini-track"><div class="mini-fill" id="dashMaterialProgress"></div></div>
-          </article>
-          <article class="stat-card accent">
-            <span>Verba Meta Ads</span>
-            <strong id="dashMediaBudget">R$ 950</strong>
-            <small id="dashCyclePeriod">18/09 a 18/10</small>
-          </article>
-          <article class="stat-card">
-            <span>Campanha</span>
-            <strong id="campaignStageLabel">Teste</strong>
-            <small id="campaignStagePeriod">18–24/09</small>
-          </article>
+          <article class="stat-card"><span>Conteúdos publicados</span><strong id="dashPublished">0/20</strong><div class="mini-track"><div class="mini-fill" id="dashContentProgress"></div></div></article>
+          <article class="stat-card"><span>Materiais recebidos</span><strong id="dashMaterials">0/12</strong><div class="mini-track"><div class="mini-fill" id="dashMaterialProgress"></div></div></article>
+          <article class="stat-card accent"><span>Verba Meta Ads</span><strong id="dashMediaBudget">R$ 950</strong><small id="dashCyclePeriod">18/09 a 18/10</small></article>
+          <article class="stat-card"><span>Campanha</span><strong id="campaignStageLabel">Teste</strong><small id="campaignStagePeriod">18–24/09</small></article>
         </div>
 
         <div class="dashboard-grid">
           <article class="panel attention-panel">
-            <div class="panel-head">
-              <div>
-                <span class="eyebrow">Atenção da Luciana</span>
-                <h2>Próximas ações</h2>
-              </div>
-              <button class="link-btn" data-go="materiais">Ver checklist completo →</button>
-            </div>
+            <div class="panel-head"><div><span class="eyebrow">Atenção da Luciana</span><h2>Próximas ações</h2></div><button class="link-btn" data-go="materiais">Ver checklist completo →</button></div>
             <div id="nextActions" class="action-list"></div>
           </article>
-
           <article class="panel">
-            <div class="panel-head">
-              <div>
-                <span class="eyebrow">Próximos conteúdos</span>
-                <h2>Fila editorial</h2>
-              </div>
-              <button class="link-btn" data-go="conteudo">Abrir calendário →</button>
-            </div>
+            <div class="panel-head"><div><span class="eyebrow">Próximos conteúdos</span><h2>Fila editorial</h2></div><button class="link-btn" data-go="conteudo">Abrir calendário →</button></div>
             <div id="nextContents" class="compact-list"></div>
           </article>
         </div>
 
         <article class="panel strategy-panel">
-          <div class="panel-head">
-            <div>
-              <span class="eyebrow">Como estamos trabalhando</span>
-              <h2>Conteúdo e campanha têm funções diferentes.</h2>
-            </div>
-          </div>
+          <div class="panel-head"><div><span class="eyebrow">Como estamos trabalhando</span><h2>Conteúdo e campanha têm funções diferentes.</h2></div></div>
           <div class="split-explain">
-            <div class="explain-card">
-              <span class="number">01</span>
-              <h3>Conteúdo</h3>
-              <p>Constrói presença, autoridade, confiança e repertório para a marca. Mantém o perfil vivo e mostra capacidade real de execução.</p>
-            </div>
-            <div class="explain-card campaign">
-              <span class="number">02</span>
-              <h3>Meta Ads</h3>
-              <p>Coloca os melhores criativos diante de pessoas e empresas com potencial de contratação e busca gerar conversas comerciais.</p>
-            </div>
+            <div class="explain-card"><span class="number">01</span><h3>Conteúdo</h3><p>Constrói presença, autoridade, confiança e repertório para a marca. Mantém o perfil vivo e mostra capacidade real de execução.</p></div>
+            <div class="explain-card campaign"><span class="number">02</span><h3>Meta Ads</h3><p>Coloca os melhores criativos diante de pessoas e empresas com potencial de contratação e busca gerar conversas comerciais.</p></div>
           </div>
         </article>
       </section>
 
       <section class="view" id="view-conteudo">
-        <div class="section-hero">
-          <div>
-            <span class="eyebrow">Sistema de Conteúdo</span>
-            <h1>20 dias para dar ritmo, prova e autoridade.</h1>
-            <p>Cada card mostra o que será publicado e exatamente o que a Capriche precisa enviar ou gravar.</p>
-          </div>
-          <div class="section-kpi">
-            <strong id="contentDoneKpi">0%</strong>
-            <span>publicado</span>
-          </div>
-        </div>
-
+        <div class="section-hero"><div><span class="eyebrow">Sistema de Conteúdo</span><h1>20 dias para dar ritmo, prova e autoridade.</h1><p>Cada card mostra o que será publicado e exatamente o que a Capriche precisa enviar ou gravar.</p></div><div class="section-kpi"><strong id="contentDoneKpi">0%</strong><span>publicado</span></div></div>
         <div class="toolbar">
           <div class="search-box"><input id="contentSearch" type="search" placeholder="Buscar tema, gancho ou serviço..."></div>
           <select id="filterFormat" class="select"><option value="">Todos os formatos</option></select>
-          <select id="filterStatus" class="select">
-            <option value="">Todos os status</option><option>A fazer</option><option>Material enviado</option><option>Aprovado</option>
-          </select>
-          <select id="filterMIStatus" class="select">
-            <option value="">Status Mais Ideias</option><option>Planejado</option><option>Em produção</option><option>Agendado</option><option>Publicado</option>
-          </select>
+          <select id="filterStatus" class="select"><option value="">Todos os status</option><option>A fazer</option><option>Material enviado</option><option>Aprovado</option></select>
+          <select id="filterMIStatus" class="select"><option value="">Status Mais Ideias</option><option>Planejado</option><option>Em produção</option><option>Agendado</option><option>Publicado</option></select>
         </div>
         <div class="content-grid" id="contentGrid"></div>
       </section>
 
       <section class="view" id="view-materiais">
-        <div class="section-hero">
-          <div>
-            <span class="eyebrow">Checklist da cliente</span>
-            <h1>O que precisamos receber da Capriche.</h1>
-            <p>Marque cada item conforme for separando e enviando. Isso destrava tanto o conteúdo quanto os anúncios.</p>
-          </div>
-          <div class="section-kpi"><strong id="materialDoneKpi">0%</strong><span>recebido</span></div>
-        </div>
+        <div class="section-hero"><div><span class="eyebrow">Checklist da cliente</span><h1>O que precisamos receber da Capriche.</h1><p>Marque cada item conforme for separando e enviando. Isso destrava tanto o conteúdo quanto os anúncios.</p></div><div class="section-kpi"><strong id="materialDoneKpi">0%</strong><span>recebido</span></div></div>
         <div class="materials-grid" id="materialsGrid"></div>
       </section>
 
       <section class="view" id="view-campanhas">
-        <div class="section-hero">
-          <div>
-            <span class="eyebrow">Tráfego pago</span>
-            <h1>Meta Ads separado do conteúdo.</h1>
-            <p>O primeiro ciclo é simples: testar, aprender e concentrar verba nos anúncios que gerarem as melhores conversas.</p>
-          </div>
-          <div class="section-kpi money"><strong id="campaignMediaBudgetKpi">R$ 950</strong><span>verba de mídia</span></div>
-        </div>
+        <div class="section-hero"><div><span class="eyebrow">Tráfego pago</span><h1>Meta Ads separado do conteúdo.</h1><p>O primeiro ciclo é simples: testar, aprender e concentrar verba nos anúncios que gerarem as melhores conversas.</p></div><div class="section-kpi money"><strong id="campaignMediaBudgetKpi">R$ 950</strong><span>verba de mídia</span></div></div>
 
         <div class="campaign-summary" id="campaignSummary"></div>
 
@@ -210,82 +120,51 @@
           <div class="panel-head">
             <div>
               <span class="eyebrow">Investimento do ciclo</span>
-              <h2>Valores editáveis.</h2>
-              <p class="panel-subtitle">Ajuste quando necessário. O total e a distribuição prevista da campanha são recalculados automaticamente.</p>
+              <h2>Verba de mídia editável.</h2>
+              <p class="panel-subtitle">A verba do Meta Ads pode ser ajustada quando necessário. A gestão mensal permanece fixa em R$ 1.000,00.</p>
             </div>
           </div>
           <div class="investment-editor">
             <label>Verba Meta Ads (R$)<input id="mediaBudgetInput" type="number" min="0" step="10"></label>
-            <label>Gestão mensal (R$)<input id="managementFeeInput" type="number" min="0" step="10"></label>
-            <div class="investment-total"><span>Total do ciclo</span><strong id="investmentTotal">R$ 1.950,00</strong><small>Salvo automaticamente neste navegador.</small></div>
+            <div class="investment-total"><span>Gestão mensal</span><strong>R$ 1.000,00</strong><small>Valor fixo</small></div>
+            <input id="managementFeeInput" type="hidden" value="1000">
+            <div class="investment-total"><span>Total do ciclo</span><strong id="investmentTotal">R$ 1.950,00</strong><small>Atualizado automaticamente.</small></div>
           </div>
         </article>
 
-        <article class="panel">
-          <div class="panel-head"><div><span class="eyebrow">Plano de execução</span><h2>3 etapas, sem pulverizar orçamento.</h2></div></div>
-          <div class="stage-grid" id="campaignStages"></div>
-        </article>
-
-        <article class="panel">
-          <div class="panel-head"><div><span class="eyebrow">Criativos iniciais</span><h2>3 ângulos para descobrir onde está a oportunidade.</h2></div></div>
-          <div class="angle-grid" id="campaignAngles"></div>
-        </article>
+        <article class="panel"><div class="panel-head"><div><span class="eyebrow">Plano de execução</span><h2>3 etapas, sem pulverizar orçamento.</h2></div></div><div class="stage-grid" id="campaignStages"></div></article>
+        <article class="panel"><div class="panel-head"><div><span class="eyebrow">Criativos iniciais</span><h2>3 ângulos para descobrir onde está a oportunidade.</h2></div></div><div class="angle-grid" id="campaignAngles"></div></article>
       </section>
 
       <section class="view" id="view-resultados">
-        <div class="section-hero">
-          <div>
-            <span class="eyebrow">Mensuração</span>
-            <h1>Resultado sem relatório complicado.</h1>
-            <p>Preencha os números principais do período e o sistema calcula automaticamente os indicadores básicos.</p>
-          </div>
-          <div class="section-kpi"><strong id="resultsLeadKpi">0</strong><span>leads registrados</span></div>
-        </div>
-
+        <div class="section-hero"><div><span class="eyebrow">Mensuração</span><h1>Resultado sem relatório complicado.</h1><p>Preencha os números principais do período e o sistema calcula automaticamente os indicadores básicos.</p></div><div class="section-kpi"><strong id="resultsLeadKpi">0</strong><span>leads registrados</span></div></div>
         <div class="results-layout">
-          <article class="panel">
-            <div class="panel-head"><div><span class="eyebrow">Dados do período</span><h2>Meta Ads</h2></div></div>
-            <div class="metric-form" id="metricForm">
-              <label>Investimento (R$)<input type="number" min="0" step="0.01" data-metric="spend"></label>
-              <label>Alcance<input type="number" min="0" step="1" data-metric="reach"></label>
-              <label>Cliques<input type="number" min="0" step="1" data-metric="clicks"></label>
-              <label>Conversas iniciadas<input type="number" min="0" step="1" data-metric="conversations"></label>
-              <label>Leads qualificados<input type="number" min="0" step="1" data-metric="leads"></label>
-              <label>Oportunidades reais<input type="number" min="0" step="1" data-metric="opportunities"></label>
-            </div>
-          </article>
-
-          <article class="panel">
-            <div class="panel-head"><div><span class="eyebrow">Leitura rápida</span><h2>Indicadores</h2></div></div>
-            <div class="calc-grid">
-              <div class="calc-card"><span>Custo por clique</span><strong id="kpiCpc">—</strong></div>
-              <div class="calc-card"><span>Custo por conversa</span><strong id="kpiConversation">—</strong></div>
-              <div class="calc-card"><span>Custo por lead</span><strong id="kpiCpl">—</strong></div>
-              <div class="calc-card"><span>Custo por oportunidade</span><strong id="kpiOpportunity">—</strong></div>
-            </div>
-            <div class="result-note"><strong>O que realmente importa:</strong><p>não é apenas gerar clique. O objetivo é descobrir quais anúncios trazem conversas com empresas que realmente podem contratar a Capriche.</p></div>
-          </article>
+          <article class="panel"><div class="panel-head"><div><span class="eyebrow">Dados do período</span><h2>Meta Ads</h2></div></div><div class="metric-form" id="metricForm">
+            <label>Investimento (R$)<input type="number" min="0" step="0.01" data-metric="spend"></label>
+            <label>Alcance<input type="number" min="0" step="1" data-metric="reach"></label>
+            <label>Cliques<input type="number" min="0" step="1" data-metric="clicks"></label>
+            <label>Conversas iniciadas<input type="number" min="0" step="1" data-metric="conversations"></label>
+            <label>Leads qualificados<input type="number" min="0" step="1" data-metric="leads"></label>
+            <label>Oportunidades reais<input type="number" min="0" step="1" data-metric="opportunities"></label>
+          </div></article>
+          <article class="panel"><div class="panel-head"><div><span class="eyebrow">Leitura rápida</span><h2>Indicadores</h2></div></div><div class="calc-grid">
+            <div class="calc-card"><span>Custo por clique</span><strong id="kpiCpc">—</strong></div>
+            <div class="calc-card"><span>Custo por conversa</span><strong id="kpiConversation">—</strong></div>
+            <div class="calc-card"><span>Custo por lead</span><strong id="kpiCpl">—</strong></div>
+            <div class="calc-card"><span>Custo por oportunidade</span><strong id="kpiOpportunity">—</strong></div>
+          </div><div class="result-note"><strong>O que realmente importa:</strong><p>não é apenas gerar clique. O objetivo é descobrir quais anúncios trazem conversas com empresas que realmente podem contratar a Capriche.</p></div></article>
         </div>
-
-        <article class="panel">
-          <div class="panel-head"><div><span class="eyebrow">Aprendizados</span><h2>O que este ciclo ensinou?</h2></div></div>
-          <textarea id="learningNotes" class="big-note" placeholder="Ex.: pós-obra gerou mais conversas; fachadas teve clique bom, mas pouca qualificação; criativo antes/depois teve melhor resposta..."></textarea>
-        </article>
+        <article class="panel"><div class="panel-head"><div><span class="eyebrow">Aprendizados</span><h2>O que este ciclo ensinou?</h2></div></div><textarea id="learningNotes" class="big-note" placeholder="Ex.: pós-obra gerou mais conversas; fachadas teve clique bom, mas pouca qualificação; criativo antes/depois teve melhor resposta..."></textarea></article>
       </section>
 
       <section class="view" id="view-ideias">
-        <div class="section-hero">
-          <div><span class="eyebrow">Banco de Ideias</span><h1>Não começar do zero todo mês.</h1><p>Guarde pautas, dúvidas de clientes e oportunidades para os próximos ciclos.</p></div>
-          <button class="btn primary" id="newIdeaBtn">+ Nova ideia</button>
-        </div>
+        <div class="section-hero"><div><span class="eyebrow">Banco de Ideias</span><h1>Não começar do zero todo mês.</h1><p>Guarde pautas, dúvidas de clientes e oportunidades para os próximos ciclos.</p></div><button class="btn primary" id="newIdeaBtn">+ Nova ideia</button></div>
         <div class="idea-board" id="ideaBoard"></div>
       </section>
     </main>
   </div>
 
-  <nav class="mobile-nav">
-    <button data-view="dashboard" class="active">Início</button><button data-view="conteudo">Conteúdo</button><button data-view="materiais">Materiais</button><button data-view="campanhas">Ads</button><button data-view="resultados">Resultados</button>
-  </nav>
+  <nav class="mobile-nav"><button data-view="dashboard" class="active">Início</button><button data-view="conteudo">Conteúdo</button><button data-view="materiais">Materiais</button><button data-view="campanhas">Ads</button><button data-view="resultados">Resultados</button></nav>
 
   <div class="modal-backdrop" id="contentModal"><div class="modal"><button class="modal-close" data-close-modal aria-label="Fechar">×</button><div id="modalContent"></div></div></div>
 
@@ -304,6 +183,16 @@
 
   <input type="file" id="importFile" accept="application/json" hidden>
   <script src="data.js"></script>
+  <script>
+    (() => {
+      const key = 'capriche-central-marketing-v1';
+      try {
+        const saved = JSON.parse(localStorage.getItem(key) || '{}');
+        saved.investment = {...(saved.investment || {}), management: window.CAPRICHE_DATA.campaigns.management};
+        localStorage.setItem(key, JSON.stringify(saved));
+      } catch (e) {}
+    })();
+  </script>
   <script src="app.js"></script>
 </body>
 </html>
