@@ -1,0 +1,14 @@
+.mi-logo{width:112px;height:auto;display:block;opacity:.96}
+.whatsapp-btn{background:#1fbf69!important;border-color:#1fbf69!important;color:#06150d!important;text-decoration:none;white-space:nowrap}
+.whatsapp-btn:hover{filter:brightness(1.06)}
+.investment-panel{border-color:#3a2f5e;background:linear-gradient(180deg,#171321,#121217)}
+.panel-subtitle{margin:6px 0 0;color:var(--muted);font-size:13px;max-width:760px}
+.investment-editor{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:12px;align-items:stretch}
+.investment-editor label{display:grid;gap:7px;color:var(--muted);font-size:11px}
+.investment-editor input{border:1px solid var(--line);background:#0d0d10;color:var(--text);border-radius:11px;padding:12px;font:inherit;font-size:20px;font-weight:700;outline:none}
+.investment-editor input:focus{border-color:#5a4988;box-shadow:0 0 0 3px rgba(155,124,255,.08)}
+.investment-total{border:1px solid #3a2f5e;background:#1b1627;border-radius:14px;padding:15px 17px;display:flex;flex-direction:column;justify-content:center}
+.investment-total span,.investment-total small{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.06em}
+.investment-total strong{font-size:25px;color:var(--purple-soft);margin:4px 0}
+@media(max-width:920px){.agency-sep,.mi-logo{display:none}.investment-editor{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){#printBtn{display:none}.investment-editor{grid-template-columns:1fr}.whatsapp-btn{padding:9px 11px;font-size:12px}}
